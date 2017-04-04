@@ -3,7 +3,7 @@
 # SOURCE: http://superuser.com/questions/109213/how-do-i-list-the-ssl-tls-cipher-suites-a-particular-website-offers
 
 # OpenSSL requires the port number.
-SERVER=192.168.1.11:443
+SERVER=192.168.1.10:443
 DELAY=1
 ciphers=$(openssl ciphers 'ALL:eNULL' | sed -e 's/:/ /g')
 
